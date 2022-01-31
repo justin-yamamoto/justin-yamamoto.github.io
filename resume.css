@@ -1,0 +1,313 @@
+/*random Css*/
+body{
+    position: relative;
+}
+.nav-link.active { 
+text-decoration: underline; 
+text-decoration-color: white;         
+}
+.navbarcolor{
+    color: white;
+    background: #161c2d; /*Background color code*/
+}
+.menuname{
+    color: white;
+    text-align: center;
+    font-size: 400%;
+    font-family: sora;
+}
+p.menutitles{
+    color: white;
+    text-align: center;
+    font-size: 250%;
+}
+.educationimg img{
+    min-width: 200px;
+    max-width: 200px;  
+}
+.headerimg img{
+    min-width: 200px;
+    max-width: 200px;
+    border: thin solid #fff;
+    border-radius: 2rem;
+    padding: 0.1em;
+}
+.headertitle h1{
+    text-align: center;
+    font-size: 400%;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: sora;    
+}
+.hicons{
+    color: white;
+    margin:1%;
+}
+p.about{
+    text-align: left; /*About section text*/
+    font-size: 150%;
+    font-family: sora;    
+}
+p.timelineheader{
+    text-align: center;
+    font-size: 300%;
+    font-weight: bold;
+}
+.menubc:hover{ 
+    text-decoration: underline; /*set underline for nav bar links*/
+}
+.education{
+    text-align: center; /*Education boxes style*/
+    border: solid;
+    border-color: #161c2d;
+    box-shadow:0 1px 3px -1px rgba(0.6, 0.6, 0, 0.6);
+    border-radius: 10%;
+    background-color: white;
+    border: 0.2rem solid #fff;
+    border-radius: 2rem;
+    padding: 0.4em;
+}
+.educationlist{
+    text-align: left;   /*Education list information*/
+    font-size: 120%;
+    font-weight: bold;
+}
+.educationtitle h1{
+    text-align: center;
+    font-size: 350%;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    font-family: sora;
+}
+.educationsubtitle h2{
+    color: #161c2d;
+    font-size: 250%;
+}
+.titlebuttons{
+    display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+/*goals section css*/
+.goals h1{
+    text-align: center;
+    font-size: 350%;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: black;
+    font-family: sora;
+
+}
+.goallist{
+    text-align: left;   /*Education list information*/
+    font-size: 120%;
+    font-weight: bold;
+    font-family: cursive;
+}
+.goallist s{
+    text-decoration-line: line-through;
+    text-decoration-color: red;
+}
+.goallist a{
+    text-decoration: none;
+}
+
+/* Popup container */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #161c2d;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: -125%;
+  left: 50%;
+  margin-left: -80px;
+}
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+} 
+ /*timeline Css*/
+section {
+     padding: 10% 0;
+ }
+ .timeline {
+     position: relative;
+}
+ .timeline::before {         /* this is the middle line of the timeline */
+     content: "";
+     background: #fff; /* timeline line color */
+     width: 1px;
+     height: 94%;
+     position: absolute;
+     left: 50%;
+     transform: translateX(-50%);
+     border: 0.1rem solid #fff; /* color of line border */
+     border-radius: 1rem;
+     padding: 0.3em;
+}
+ .timeline-item {
+     width: 100%;
+     margin-bottom: 10px;
+}
+ .timeline-item:nth-child(even) .timeline-content {
+     float: right;
+     padding: 40px 20px 10px 20px;
+}
+ .timeline-item:nth-child(even) .timeline-content .date {
+     right: auto;
+     left: 0;
+}
+ .timeline-item:nth-child(even) .timeline-content::after {
+     content: "";
+     position: absolute;
+     border-style: solid;
+     width: 0;
+     height: 0;
+     top: 30px;
+     left: -15px;
+     border-width: 10px 15px 10px 0;
+     border-color: transparent #161c2d transparent transparent; /*card arrows for right side*/
+}
+ .timeline-item::after {
+     content: "";
+     display: block;
+     clear: both;
+}
+ .timeline-content {
+     position: relative;
+     width: 45%;
+     padding: 10px 30px;
+     border-radius: 4px;
+     background: #f5f5f5; /*Timeline card background*/
+     box-shadow: 0 20px 25px -15px rgba(0, 0, 0, 0.3);
+}
+ .timeline-content::after {
+     content: "";
+     position: absolute;
+     border-style: solid;
+     width: 0;
+     height: 0;
+     top: 30px;
+     right: -15px;
+     border-width: 10px 0 10px 15px;
+     border-color: transparent transparent transparent #161c2d; /*card arrow for left side*/
+}
+ .timeline-img {
+     width: 30px;
+     height: 30px;
+     background:  #161c2d; /*Timeline Dot Color*/ 
+     border-radius: 50%;
+     position: absolute;
+     left: 50%;
+     margin-top: 25px;
+     margin-left: -15px;
+      border: 0.2rem solid #fff;
+     border-radius: 2rem;
+     padding: 0.4em;
+     
+}
+ a.timelineanchor {
+     background: blue;
+     color: #fff;
+     padding: 8px 20px;
+     font-size: 14px;
+     margin-bottom: 20px;
+     margin-top: 10px;
+     display: inline-block;
+     border-radius: 2px;
+     box-shadow: 0 1px 3px -1px rgba(0, 0, 0, 0.6);
+     text-decoration: underline;
+}
+ a.timelineanchor:hover, a.timelineanchor:active, a.timelineanchor:focus {
+     background: #32408f;
+     color: #fff;
+     text-decoration: none;
+}
+ .timeline-card {
+     padding: 0 !important;
+}
+ .timeline-card p {
+     padding: 0 20px;
+}
+ .timeline-card a {
+     margin-left: 20px;
+}
+ .timeline-item .timeline-img-header {
+     background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url("https://picsum.photos/1000/800/?random") center center no-repeat; /*timeline images*/
+     background-size: cover;
+}
+ .timeline-img-header {
+     height: 300px;
+     position: relative;
+     margin-bottom: 20px;
+}
+ .timeline-img-header h2 {
+     color: #fff; /*Image text color*/
+     position: absolute;
+     bottom: 5px;
+     left: 20px;
+}
+ blockquote {
+     margin-top: 30px;
+     color: #757575;
+     border-left-color: red;
+     padding: 0 20px;
+}
+ .date {
+     background: #161c2d; /*Timeline date bg color*/
+     display: inline-block;
+     color: #fff;
+     padding: 5px;
+     position:absolute;
+     top: 0;
+     right: 0;
+     border: solid thin;
+     border-color: white;
+}
+ @media screen and (max-width: 768px) {
+     .timeline::before {
+         left: 50px;
+    }
+     .timeline .timeline-img {
+         left: 50px;
+    }
+     .timeline .timeline-content {
+         max-width: 100%;
+         width: auto;
+         margin-left: 70px;
+    }
+     .timeline .timeline-item:nth-child(even) .timeline-content {
+         float: none;
+    }
+     .timeline .timeline-item:nth-child(odd) .timeline-content::after {
+         content: "";
+         position: absolute;
+         border-style: solid;
+         width: 0;
+         height: 0;
+         top: 30px;
+         left: -15px;
+         border-width: 10px 15px 10px 0;
+         border-color: transparent #f5f5f5 transparent transparent;
+    }
+}
+/*Flip card section*/
