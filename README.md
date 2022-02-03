@@ -1,2 +1,2 @@
 # justin-yamamoto.github.io
-This is a personal(resume) website for myself.
+This is a personal website about myself, Justin Yamamoto.
