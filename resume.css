@@ -108,6 +108,7 @@ p.timelineheader{
 .goallist s{
     text-decoration-line: line-through;
     text-decoration-color: red;
+    text-decoration-thickness: 2px;
 }
 .goallist a{
     text-decoration: none;
